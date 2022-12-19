@@ -59,7 +59,7 @@ function exportToCsv(text) {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>TourGO | IndieVenueLocator</title>
       </Head>
       <div className="container">
         <div className="header">
