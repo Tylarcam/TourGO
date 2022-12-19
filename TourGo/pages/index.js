@@ -122,13 +122,13 @@ function exportToCsv(text) {
 
       <div className="badge-container grow">
         <a
-          href="https://www.buymeacoffee.com/Tcam"
+          href="https://twitter.com/tylarcampbell"
           target="_blank"
           rel="noreferrer"
         >
           <footer className="badge">
             <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p> © 2022 TourGO_AI. All Rights Reserved. Built by @tylarcampbell</p>
+            <p> © 2022 ShrtHnd AI. All rights reserved. Built by @tylarcampbell</p>
           </footer>
         </a>
         
