@@ -1,11 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/twitterIcon.png';
-import bmcLogo from '../assets/bmc-logo-no-background.png';
 import { useState } from 'react';
-import React from 'react';
-
-
 
 const Home = () => {
   const [userInput, setUserInput] = useState('');
@@ -79,7 +75,7 @@ function exportToCsv(text) {
       </div>
 <div>
   <textarea
-    className="prompt-container"
+    className="prompt-box"
     placeholder="Enter the State or City of your tour dates, let us connect you to the right venues!"
     value={userInput}
     onChange={onUserChangedText}
@@ -124,46 +120,19 @@ function exportToCsv(text) {
   > Export to CSV </button>
 
 
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Connect with us</h3>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="https://twitter.com/tylarcampbell" target="_blank" rel="noopener noreferrer">
-              <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="twitter icon" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/tylar-campbell/" target="_blank" rel="noopener noreferrer">
-              <img src="https://img.icons8.com/color/48/000000/linkedin-circled.png" alt="linkedin icon" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/IamTcam/" target="_blank" rel="noopener noreferrer">
-              <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="instagram icon" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.buymeacoffee.com/Tcam" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/48/null/external-buy-me-a-coffee-help-creators-receive-support-from-their-audience-logo-filled-tal-revivo.png"
-            alt="buymeacoffee icon" 
-            /> 
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="mailto:tylarcam@alumni.stanford.edu" target="_blank" rel="noopener noreferrer">
-              <img src="https://img.icons8.com/color/48/000000/secured-letter.png" alt="mail icon" />
-            </a>
-          </li>
-        </ul>
+      <div className="badge-container grow">
+        <a
+          href="https://www.buymeacoffee.com/Tcam"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <footer className="badge">
+            <Image src={buildspaceLogo} alt="buildspace logo" />
+            <p> © 2022 TourGO_AI. All Rights Reserved. Built by @tylarcampbell</p>
+          </footer>
+        </a>
+        
       </div>
-    </div>
-  </div>
-</footer>
-
     </div>
     
   );
