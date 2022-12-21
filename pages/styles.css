@@ -78,6 +78,9 @@ body {
     height: min-content;
     padding: 0px;
     width: min-content;
+    max-width: 400px;
+    max-height: 200px;
+    min-height: fit-content;
 }
 
 .prompt-box {
@@ -100,7 +103,7 @@ body {
     padding: 20px;
     position: relative;
     width: 610px;
-    max-width: 1200px;
+    max-width: 300px;
     will-change: transform;
     overflow: auto;
     outline: none;
@@ -137,7 +140,7 @@ textarea {
     overflow: hidden;
     padding: 0px;
     position: relative;
-    width: 100%;
+    width: center;
 }
 
 .key-stroke {
@@ -329,6 +332,24 @@ textarea {
     color: rgba(255, 255, 255, 0.5);
 }
 
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul.list-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  li.list-inline-item {
+    margin-right: 10px;
+  }
+
 @media (min-width: 810px) and (max-width: 1199px) {
     .container {
         max-width: 600px;
@@ -415,4 +436,5 @@ textarea {
     100% {
         transform: rotate(360deg);
     }
+    
 }
